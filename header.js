@@ -5,3 +5,5 @@ function initHeader () {
     header.appendChild(title);
     document.getElementById("root").appendChild(header);
 }
+
+export default initHeader;
