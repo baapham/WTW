@@ -98,7 +98,7 @@ function createCollapsableList () {
 
         let searchButton = createButton("btn btn-outline-success my-2 my-sm-0", "Search");
         searchButton.type = "submit"
-        searchButton.appendChild(searchButton);
+        searchBox.appendChild(searchButton);
 
     collapsableList.appendChild(searchBox);
 
