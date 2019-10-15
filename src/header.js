@@ -49,7 +49,7 @@ function createButton(classType) {
 // textString refers to the string that is displayed in the text 
 function createHyperlink (textLink, textString) {
     let hyperlink = "a";
-    hyperlink.classType = "nav-link";
+    hyperlink.className = "nav-link";
     hyperlink.innerText = textString;
     hyperlink.href = textLink;
     return hyperlink;
