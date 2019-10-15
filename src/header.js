@@ -27,7 +27,10 @@ function createLogo() {
 function enableMobileNavigationBar(){
     let mobileNavigationBar = createButton("navbar-toggler");
     mobileNavigationBar.setAttribute("data-toggle", "collapse");
-    
+    mobileNavigationBar.setAttribute("data-target", "#navbarSupportedContent");
+    mobileNavigationBar.setAttribute("aria-controls", "navbarSupportedContent");
+    mobileNavigationBar.setAttribute("aria-expanded", "false");
+    mobileNavigationBar.setAttribute("aria-label", "Toggle navigation");
     let navBarIcon = document.createElement("span");
     navBarIcon.className = "navbar-toggler-icon";
     mobileNavigationBar.appendChild(navBarIcon);
