@@ -48,7 +48,7 @@ function createButton(classType) {
 // textLink refers to the URL that text refers to
 // textString refers to the string that is displayed in the text 
 function createHyperlink (textLink, textString) {
-    let hyperlink = "a";
+    let hyperlink = document.createElement("a");
     hyperlink.className = "nav-link";
     hyperlink.innerText = textString;
     hyperlink.href = textLink;
