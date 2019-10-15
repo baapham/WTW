@@ -2,7 +2,7 @@ function initHeader () {
     let navigationBar = document.createElement("nav");
     navigationBar.className = "navbar navbar-expand-lg navbar-light bg-light";
     createLogo(navigationBar);
-
+    mobileNavigationBar(navigationBar);
     document.getElementById("root").appendChild(navigationBar);
 }
 
@@ -20,7 +20,8 @@ function mobileNavigationBar(parentNode){
     let mobileNavigationBar = document.createElement("button");
     mobileNavigationBar.className = "navbar-toggler";
     mobileNavigationBar.type = "button";
-    mobileNavigationBar.dataToggle = "collapse";
+    mobileNavigationBar.setAttribute("data-toggle", "collapse");
+    parentNode.appendChild(mobileNavigationBar);
 }
 
 export default initHeader;
