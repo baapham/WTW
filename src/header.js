@@ -77,8 +77,7 @@ function createCollapsableList () {
     // Creates un-ordered list
     let collapsableList = document.createElement("ul");
     collapsableList.className = "navbar-nav mr-auto";
-    collapsableListDiv.appendChild(collapsableList);
-    
+   
     let homeButton = createListItem("#", "Home", true, "nav-item");
     collapsableList.appendChild(homeButton);
 
@@ -94,7 +93,9 @@ function createCollapsableList () {
     let loginButton = createButton("btn btn-light", "Login");
     collapsableListDiv.appendChild(loginButton);
 
-    return collapsableList;
+    collapsableListDiv.appendChild(collapsableList);
+
+    return collapsableListDiv;
 }
 
 export default initHeader;
