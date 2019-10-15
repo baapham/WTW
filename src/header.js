@@ -1,4 +1,7 @@
 function initHeader () {
+    let navigationContainer = document.createElement("div");
+    navigationContainer.className = "container";
+
     let navigationBar = document.createElement("nav");
     navigationBar.className = "navbar navbar-expand-lg navbar-light bg-light";
     
@@ -11,7 +14,9 @@ function initHeader () {
     let collapsableList = createCollapsableList();
     navigationBar.appendChild(collapsableList);
 
-    document.getElementById("root").appendChild(navigationBar);
+    navigationContainer.appendChild(navigationBar);
+
+    document.getElementById("root").appendChild(navigationContainer);
 }
 
 // Function that creates logo
