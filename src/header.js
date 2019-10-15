@@ -87,13 +87,13 @@ function createCollapsableList () {
     let searchButton = createListItem(null, "Search", false, "form-inline my-2 my-lg-0");
     collapsableList.appendChild(searchButton);
 
+    collapsableListDiv.appendChild(collapsableList);
+
     let signupButton = createButton("btn btn-success", "Sign up");
     collapsableListDiv.appendChild(signupButton);
 
     let loginButton = createButton("btn btn-light", "Login");
     collapsableListDiv.appendChild(loginButton);
-
-    collapsableListDiv.appendChild(collapsableList);
 
     return collapsableListDiv;
 }
