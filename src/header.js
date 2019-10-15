@@ -5,7 +5,7 @@ function initHeader () {
     let logo = createLogo();
     navigationBar.appendChild(logo);
 
-    let mobileNavigationBar = mobileNavigationBar();
+    let mobileNavigationBar = enableMobileNavigationBar();
     navigationBar.appendChild(mobileNavigationBar);
 
     document.getElementById("root").appendChild(navigationBar);
@@ -21,7 +21,7 @@ function createLogo() {
 }
 
 // Function that transforms navigation bar for mobile viewing
-function mobileNavigationBar(){
+function enableMobileNavigationBar(){
     let mobileNavigationBar = createButton("navbar-toggler");
     mobileNavigationBar.setAttribute("data-toggle", "collapse");
     
