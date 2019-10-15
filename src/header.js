@@ -34,6 +34,7 @@ function createButton(classType) {
     let newButton = document.createElement("button");
     newButton.type = "button";
     newButton.className = classType;
+    return newButton;
 }
 
 export default initHeader;
