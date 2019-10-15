@@ -5,7 +5,7 @@ function initHeader () {
     let logo = createLogo();
     navigationBar.appendChild(logo);
 
-    let mobileNavigationbar = mobileNavigationBar();
+    let mobileNavigationBar = mobileNavigationBar();
     navigationBar.appendChild(mobileNavigationBar);
 
     document.getElementById("root").appendChild(navigationBar);
