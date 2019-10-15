@@ -8,6 +8,9 @@ function initHeader () {
     let mobileNavigationBar = enableMobileNavigationBar();
     navigationBar.appendChild(mobileNavigationBar);
 
+    let collapsableList = createCollapsableList();
+    navigationBar.appendChild(collapsableList);
+
     document.getElementById("root").appendChild(navigationBar);
 }
 
