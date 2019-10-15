@@ -89,7 +89,7 @@ function createCollapsableList () {
     collapsableList.appendChild(aboutButton);
 
     let searchBox = createListItem(null, "Search", false, "form-inline my-2 my-lg-0");
-        let inputBox = document.createElement(input);
+        let inputBox = document.createElement("input");
         inputBox.className = "form-control mr-sm-2";
         inputBox.type = "search";
         inputBox.placeholder = "Search Movie";
@@ -99,7 +99,7 @@ function createCollapsableList () {
         let searchButton = createButton("btn btn-outline-success my-2 my-sm-0", "Search");
         searchButton.type = "submit"
         searchButton.appendChild(searchButton);
-        
+
     collapsableList.appendChild(searchBox);
 
     collapsableListDiv.appendChild(collapsableList);
