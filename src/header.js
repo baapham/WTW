@@ -88,10 +88,10 @@ function createCollapsableList () {
     collapsableList.appendChild(searchButton);
 
     let signupButton = createButton("btn btn-success");
-    collapsableList.appendChild(signupButton);
+    collapsableListDiv.appendChild(signupButton);
 
     let loginButton = createButton("btn btn-light");
-    collapsableList.appendChild(loginButton);
+    collapsableListDiv.appendChild(loginButton);
 
     return collapsableList;
 }
