@@ -92,6 +92,8 @@ function createCollapsableList () {
 
     let loginButton = createButton("btn btn-light");
     collapsableList.appendChild(loginButton);
+
+    return collapsableList;
 }
 
 export default initHeader;
